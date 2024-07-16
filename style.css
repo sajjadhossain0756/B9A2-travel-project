@@ -263,6 +263,67 @@
     opacity: 70%;
     padding-bottom: 20px;
 }
+/* discount section styles start here */
+.discount-section{
+    margin: 60px 120px;
+}
+.discount-content{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.discount-title{
+    font-size: 40px;
+    font-weight: 800;
+}
+.discount-description{
+    opacity: 70%;
+    margin: 20px 0px;
+}
+.discount-card-1, .discount-card-2, .discount-card-3{
+    background-image: url(./Images/discount-1.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 50px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+.discount-card-2{
+    background-image: url(./Images/discount-2.png);
+    justify-content: start;
+}
+.card-box{
+    max-width: 450px;
+    height: 320px;
+    background-color: rgba(243, 238, 238, 0.8); 
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-box .card-title{
+    font-size: 24px;
+    font-weight: 800;
+}
+.card-box .card-description{
+    margin: 20px 0px;
+    opacity: 70%;
+}
+.card-box .card-subtitle{
+    color: #ff5400;
+    font-size: 20px;
+    font-weight: 800;
+}
+.discount-btn{
+    margin: 20px 0px;
+    padding: 15px 25px;
+    max-width: 200px;
+}
 
 /* responsive design for mobile device or small device */
 @media screen and (max-width:576px) {
@@ -340,6 +401,10 @@
     .choose-cards{
         grid-template-columns: repeat(1,1fr);
     }
+    /* discount section styles start here */
+    .discount-section{
+       margin: 60px 20px;
+    }
 
    
 }
@@ -397,4 +462,8 @@
     .choose-section{
        margin: 60px 50px;
     }
+    /* discount section styles start here */
+    .discount-section{
+        margin: 60px 50px;
+     }
  }
