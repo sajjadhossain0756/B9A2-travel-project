@@ -1,0 +1,52 @@
+/* google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.mulish-font {
+    font-family: "Mulish", sans-serif;
+  }
+/* universal style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d-flex{
+    display: flex;
+}
+.color-primary{
+    color: #131318;
+}
+.color-secondary{
+    color: #ff5400;
+}
+.color-dark{
+    color: #424247;
+}
+
+/* nav section styles start here */
+.navbar{
+    margin: 30px 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-nav{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.navbar-brand{
+    font-size: 36px;
+    font-weight: 800;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+}
+.nav-item > .nav-link{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+  
