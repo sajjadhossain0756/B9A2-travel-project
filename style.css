@@ -41,6 +41,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.nav-logo{
+    max-width: 50px;
+}
+.nav-logo img{
+    width: 100%;
+}
 .navbar-nav{
     justify-content: center;
     align-items: center;
@@ -49,6 +55,7 @@
 .navbar-brand{
     font-size: 36px;
     font-weight: 800;
+    text-decoration: none;
 }
 .nav-item{
     list-style: none;
@@ -112,7 +119,7 @@
 }
 .input-group input{
     padding: 15px 10px;
-    width: 80%;
+    width: 90%;
     border-radius: 5px;
     border: none;
 }
@@ -123,6 +130,37 @@
     margin: 0px 5px;
     color: white;
 }
+/* popular section styles start here */
+.popular-container{
+    margin: 60px 120px;
+    gap: 30px;
+}
+.popular-content{
+    max-width: 480px;
+    padding: 10px;
+}
+.popular-title{
+    font-size: 40px;
+    font-weight: 700;
+}
+.popular-list{
+    opacity: 70%;
+    padding: 15px 20px 15px 25px;
+}
+.popular-description{
+    opacity: 70%;
+    margin-top: 20px;
+}
+.popular-btn{
+    margin: 20px 0px;
+    padding: 15px 25px;
+}
+.popular-image{
+    max-width: 600px;
+}
+.popular-image img{
+    width: 100%;
+}
 /* responsive design for mobile device or small device */
 @media screen and (max-width:576px) {
    /* nav section styles start here */  
@@ -130,9 +168,14 @@
       flex-direction: column;
       margin: 30px 20px;
       gap: 30px;
-   } 
+      justify-content: center;
+      align-items: center;
+   }
+   .navbar .nav-link{
+      font-size: 16px;
+   }
    .navbar-nav{
-      gap: 14px;
+      gap: 18px;
    }
    /* hero image section styles start here */
    .hero-section{
@@ -164,6 +207,17 @@
    }
    .hero-btn i{
       margin-right: 20px;
+   }
+   /* popular section styles start here */
+   .popular-container{
+       margin: 40px 20px;
+       flex-direction: column;
+   }
+   .popular-list{
+       padding: 40px;
+   }
+   .popular-content{
+      text-align: center;
    }
    
 }
@@ -199,6 +253,19 @@
     }
     .hero-btn i{
        margin-right: 20px;
+    }
+    /* popular section styles start here */
+   .popular-container{
+       margin: 60px 50px;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .popular-list{
+        padding: 40px;
+    }
+    .popular-content{
+       text-align: center;
     }
     
  }
