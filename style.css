@@ -72,7 +72,7 @@
     background-image: url(./Images/hero-img.png);
     background-position: center;
     background-size: cover;
-    max-width: 1040px;
+    max-width: 1080px;
     height: 500px;
     margin: 10px 120px;
     border-radius: 16px;
@@ -178,10 +178,6 @@
 .destination-description{
     opacity: 70px;
 }
-/* .destination-images-container .row-1, .row-2, .row-3{
-    display: grid;
-    gap: 20px;
-} */
  .destination-image{
     position: relative;
     
@@ -213,6 +209,59 @@
 .row-3{
     margin: 10px 0px;
     grid-template-columns: 0.8fr 1.2fr;
+}
+/* choose section start here */
+.choose-section{
+    margin: 60px 120px;
+}
+.choose-content{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+.choose-title{
+    font-size: 40px;
+    font-weight: 800;
+}
+.choose-description{
+    margin: 20px 0px;
+    opacity: 70%;
+}
+.choose-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.choose-card{
+    max-width: 500px;
+    padding: 15px 20px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    
+ }
+.card-1{
+    background-color: #fffbf7;
+}
+.card-2{
+    background-color: #f4fdff;
+}
+.card-3{
+    background-color: #fef6f6;
+    margin: 0 auto;
+}
+.choose-card-icon i{
+    font-size: 50px;
+    color: #ff5400;
+}
+.choose-card-title{
+    font-size: 24px;
+    font-weight: 800;
+    padding: 20px 0px;
+}
+.choose-card-description{
+    opacity: 70%;
+    padding-bottom: 20px;
 }
 
 /* responsive design for mobile device or small device */
@@ -284,6 +333,13 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
    }
+   /* choose section start here */
+   .choose-section{
+       margin: 60px 20px;
+    }
+    .choose-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
 
    
 }
@@ -333,8 +389,12 @@
     .popular-content{
        text-align: center;
     }
-       /* destination section styles start here */
+    /* destination section styles start here */
     .destination-container{
        margin: 40px;
+    }
+    /* choose section start here */
+    .choose-section{
+       margin: 60px 50px;
     }
  }
